@@ -47,16 +47,17 @@ public class Livecoding {
         double midterm = input.nextDouble();
 
         System.out.print("enter final exam score: ");
-        double finalExam = input.nextDouble();
+        double finalexam = input.nextDouble();
 
-        double average = calculateAverage(prelim, midterm, finalExam);
+        double average = calculateAverage(prelim, midterm, finalexam);
 
         String grade = getGradeEquivalent(average);
 
         System.out.println("\n-> Academic Performance <-");
         System.out.printf(" Average: ", average);
         System.out.println(" Grade Equivalent: " + grade);    
-
+        
+        System.out.println("Status: Passed");
         input.close();
     }
 }
